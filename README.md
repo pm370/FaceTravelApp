@@ -16,4 +16,4 @@ This app uses OpenCV module to extract faces from images and create a travelling
 
 * In order to install the packages mentioned above you can simply type the command pip install "Required Package Name"
 
-## To run the application simply run main.py file using the command python main.py
+#### To run the application simply run main.py file using the command python main.py
