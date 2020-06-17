@@ -20,3 +20,12 @@
 * In order to install the packages mentioned above you can simply type the command pip install "Required Package Name"
 
 #### To run the application simply run main.py file using the command python main.py
+
+* Once you see an application you follow the steps below to run the project : 
+        
+   * Click on the browse button and select the folder which has the images
+   * You will see a grid of images presented in that folder on the top left of the window click on action --> sort --> Options.         
+   * Then you should see the sorted images in the grid now click on preview video button at the bottom.
+   * You will see a preview of the video.
+   * To export the video go to File --> Export and then select the folder where you want to save the file.
+        
