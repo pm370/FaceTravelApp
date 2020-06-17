@@ -1,5 +1,5 @@
-# FaceTravelApp
-This repository is contains the project Face Travel App made under LeadingIndiaAI Internship. For instructions on how to run the files refer to the readme.md file.
+# Face-Travel-App
+**Version : 1.4**
 
 This app uses OpenCV module to extract faces from images and create a travelling video using the extracted images. 
 
@@ -15,3 +15,5 @@ This app uses OpenCV module to extract faces from images and create a travelling
   * tkinter
 
 * In order to install the packages mentioned above you can simply type the command pip install "Required Package Name"
+
+## To run the application simply run main.py file using the command python main.py
