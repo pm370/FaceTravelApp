@@ -28,9 +28,9 @@ def sort_e(imageDir):
 		
 	for file in os.listdir(imageDir):
 		n=n+1
-		roi_color= cv2.imread(imageDir+'/'+file)
-		gray=cv2.cvtColor(roi_color,cv2.COLOR_BGR2GRAY)
-		gray = cv2.resize(gray,(48,48),interpolation=cv2.INTER_AREA)
+		roi_color= cv2.imread(imageDir+'/'+file) #roi stands for region of interest
+		gray=cv2.cvtColor(roi_color,cv2.COLOR_BGR2GRAY) #Converting the color image to grayscale image
+		gray = cv2.resize(gray,(48,48),interpolation=cv2.INTER_AREA) #Resizing the image
 		if np.sum([gray])!=0:
 			roi = gray.astype('float')/255.0
 			roi = img_to_array(roi)
@@ -41,10 +41,8 @@ def sort_e(imageDir):
 		#Sad->Angry->Neutral->Surprise->Happy
 		if label == 'Happy':
 			cv2.imwrite(writePath+"e"+str(n)+"pic.jpg", roi_color)
-			# cv2.imwrite(pathExtractedFaces+str(n)+"cropped.jpg", roi_color)
 		elif label == 'Neutral':
 			cv2.imwrite(writePath+"c"+str(n)+"pic.jpg", roi_color)
-			# cv2.imwrite(pathExtractedFaces+str(n)+"cropped.jpg", roi_color)
 		elif label == 'Angry':
 			cv2.imwrite(writePath+"b"+str(n)+"pic.jpg", roi_color)
 		elif label== 'Sad':
@@ -52,4 +50,4 @@ def sort_e(imageDir):
 		elif label == 'Surprise':
 			cv2.imwrite(writePath+"d"+str(n)+"pic.jpg", roi_color)
 
-	print("[INFO] all images saved according to emotions")
+	print("[INFO] All images have been saved according to emotions ! ")

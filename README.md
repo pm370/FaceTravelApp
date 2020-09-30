@@ -28,4 +28,5 @@
    * Then you should see the sorted images in the grid now click on preview video button at the bottom.
    * You will see a preview of the video.
    * To export the video go to File --> Export and then select the folder where you want to save the file.
+   
         
