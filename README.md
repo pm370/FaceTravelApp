@@ -16,6 +16,7 @@
   * opencv-utils
   * tensorflow
   * tkinter
+  * imutils
 
 * In order to install the packages mentioned above you can simply type the command pip install "Required Package Name"
 
